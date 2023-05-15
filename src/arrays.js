@@ -31,3 +31,22 @@ function countZeros(arr) {
     return count;
 }
 console.log(countZeros(twoArrays));
+
+// Write a function that returns the largest even number in an array.
+
+let numArray = [1, 10, 17];
+let numArray2 = [1, 3, 5, 7, 9]
+
+function evenLargestNumber(arr) {
+    let largestNum = null;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0 && (largestNum < arr[i]))
+        largestNum = arr[i];
+     }
+        return largestNum;
+}
+   
+
+
+console.log(evenLargestNumber(numArray));
+console.log(evenLargestNumber(numArray2));
