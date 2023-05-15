@@ -16,3 +16,18 @@ function deleteDuplicates(arr) {
     return newArray; 
 }
 console.log(deleteDuplicates(arr));
+
+//Function that counts the amount of zeros in an array, returns the count of the values.
+let twoArrays = [[0, 0], [0, 1]];
+
+function countZeros(arr) {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++)
+        if (arr[i][j] === 0) {
+            count++
+        }
+    }
+    return count;
+}
+console.log(countZeros(twoArrays));
