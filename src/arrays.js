@@ -50,3 +50,15 @@ function evenLargestNumber(arr) {
 
 console.log(evenLargestNumber(numArray));
 console.log(evenLargestNumber(numArray2));
+
+//Create a function that transofrms an array into mirror array.
+// mirrorArray([1, 2, 3, 4])
+
+function mirrorArray(arr) {
+    for (let i = arr.length - 2; i >= 0; i--){
+        arr.push(arr[i]);
+    }
+    return arr;
+};
+
+console.log(mirrorArray([1, 2, 3, 4]));
